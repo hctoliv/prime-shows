@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-BR" class="intro-on">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime Shows e Eventos 321 · Produtora de shows e eventos artísticos</title>
+<meta name="description" content="Prime Shows e Eventos 321, produtora de shows e eventos artísticos em São Paulo. Artistas da Prime: Jéssica Vieira, Dener & Thiago, Junior & Leonardo e Fernando Lorenz.">
+<meta property="og:title" content="Prime Shows e Eventos 321">
+<meta property="og:description" content="Produtora de shows e eventos artísticos. Contrate os artistas da Prime para o seu evento.">
+<meta property="og:image" content="img/jessica-2.jpg">
+<meta name="theme-color" content="#070606">
+<link rel="icon" href="favicon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+<script>
+  (function(){var q=location.search;try{if(q.indexOf('intro')<0&&sessionStorage.getItem('ps-intro'))document.documentElement.classList.remove('intro-on')}catch(e){}})();
+</script>
+</head>
+<body>
+
+<!-- intro 3 2 1 -->
+<div class="countdown" id="countdown" aria-hidden="true">
+  <div class="cd-beam"></div>
+  <div class="cd-digits">
+    <span class="cd-d" data-n="3">3</span>
+    <span class="cd-d" data-n="2">2</span>
+    <span class="cd-d" data-n="1">1</span>
+  </div>
+  <div class="cd-logo">
+    <img src="img/logo.png" alt="" width="134" height="39">
+    <p>Produtora de shows e eventos artísticos</p>
+  </div>
+  <button class="cd-skip" type="button">pular</button>
+</div>
+
+<header class="hd" id="hd">
+  <a href="#topo" class="hd-logo" aria-label="Prime Shows 321, início"><img src="img/logo.png" alt="Prime Shows 321" width="134" height="39"></a>
+  <nav class="hd-nav" id="nav">
+    <a href="#artistas">Artistas</a>
+    <a href="#palcos">Palcos</a>
+    <a href="#como">Como contratar</a>
+    <a href="#bastidores">Bastidores</a>
+    <a href="#contratar" class="hd-cta">Contratar show</a>
+  </nav>
+  <button class="hd-burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-cols">
+      <figure class="hcol">
+        <video muted loop playsinline preload="none" poster="video/hero-1.jpg" data-src="video/hero-1.mp4"></video>
+        <figcaption><i></i>Jéssica Vieira e Bruno Hipólito</figcaption>
+      </figure>
+      <figure class="hcol">
+        <video muted loop playsinline preload="none" poster="video/hero-2.jpg" data-src="video/hero-2.mp4"></video>
+        <figcaption><i></i>Jéssica Vieira · Quintal do Espeto</figcaption>
+      </figure>
+      <figure class="hcol">
+        <video muted loop playsinline preload="none" poster="video/hero-3.jpg" data-src="video/hero-3.mp4"></video>
+        <figcaption><i></i>Fernando Lorenz no show do Ricardo Rosalem · Monte Carlo SP</figcaption>
+      </figure>
+    </div>
+    <canvas class="hero-lights" id="lights" aria-hidden="true"></canvas>
+    <div class="hero-shade"></div>
+
+    <div class="hero-in">
+      <p class="tag-live"><span class="dot"></span>ao vivo · São Paulo</p>
+      <h1 class="hero-h">
+        <span class="l1">Produtora de</span>
+        <span class="l2">shows <em>&amp;</em> eventos</span>
+        <span class="l3">artísticos</span>
+      </h1>
+      <p class="hero-p">A família Prime leva o palco até o seu evento. Artistas da casa: Jéssica Vieira, Dener &amp; Thiago, Junior &amp; Leonardo e Fernando Lorenz.</p>
+      <div class="hero-ctas">
+        <a href="#contratar" class="btn btn-gold">Contratar um show</a>
+        <a href="#artistas" class="btn btn-line">Conhecer os artistas</a>
+      </div>
+    </div>
+    <a href="#artistas" class="hero-scroll" aria-label="Rolar para os artistas"><span></span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="band" aria-hidden="true">
+    <div class="band-track">
+      <span>Que show pancada foi esse</span><b>✦</b>
+      <span>Mais um evento</span><b>✦</b>
+      <span>Resenha Prime</span><b>✦</b>
+      <span>O artista vive do palco</span><b>✦</b>
+      <span>Aqui é onde o sistema fica bruto de verdade</span><b>✦</b>
+      <span>Família Prime</span><b>✦</b>
+      <span>Que show pancada foi esse</span><b>✦</b>
+      <span>Mais um evento</span><b>✦</b>
+      <span>Resenha Prime</span><b>✦</b>
+      <span>O artista vive do palco</span><b>✦</b>
+      <span>Aqui é onde o sistema fica bruto de verdade</span><b>✦</b>
+      <span>Família Prime</span><b>✦</b>
+    </div>
+  </div>
+
+  <!-- ARTISTAS -->
+  <section class="artists" id="artistas">
+    <div class="sec-head">
+      <p class="kicker">elenco</p>
+      <h2 class="sec-h">Artistas da Prime</h2>
+      <p class="sec-p">Quatro atrações da casa, prontas pro seu palco. Escolha um nome e veja quem sobe.</p>
+    </div>
+
+    <div class="stage-wrap">
+      <ol class="roster" id="roster" role="tablist" aria-label="Artistas">
+        <li><button role="tab" aria-selected="true" data-a="0"><small>01</small><span>Jéssica Vieira</span><em>cantora</em></button></li>
+        <li><button role="tab" aria-selected="false" data-a="1"><small>02</small><span>Dener &amp; Thiago</span><em>dupla</em></button></li>
+        <li><button role="tab" aria-selected="false" data-a="2"><small>03</small><span>Junior &amp; Leonardo</span><em>dupla</em></button></li>
+        <li><button role="tab" aria-selected="false" data-a="3"><small>04</small><span>Fernando Lorenz</span><em>cantor e compositor</em></button></li>
+      </ol>
+
+      <div class="stage" id="stage" role="tabpanel" aria-live="polite">
+        <div class="stage-media">
+          <img class="stage-img" id="stageImg" src="img/jessica.jpg" alt="Jéssica Vieira cantando ao vivo">
+          <video class="stage-vid" id="stageVid" playsinline preload="none"></video>
+          <div class="stage-spot"></div>
+          <button class="play" id="play" type="button"><span class="play-ic"></span><span class="play-t">Ouvir ao vivo</span></button>
+          <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="stage-info">
+          <p class="si-handle" id="siHandle">@jessica.vieira.oficial</p>
+          <h3 class="si-name" id="siName">Jéssica Vieira</h3>
+          <blockquote class="si-quote" id="siQuote">“Mais um evento @primeshowseventossp @quintaldoespeto”</blockquote>
+          <ul class="si-facts" id="siFacts"></ul>
+          <div class="si-ctas">
+            <a class="btn btn-gold" id="siHire" href="#contratar">Contratar Jéssica Vieira</a>
+            <a class="btn btn-line" id="siIg" href="https://www.instagram.com/jessica.vieira.oficial/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PALCOS -->
+  <section class="venues" id="palcos">
+    <div class="venues-sticky">
+      <div class="venues-left">
+        <p class="kicker">por onde a família Prime passou</p>
+        <h2 class="sec-h">Palcos</h2>
+        <ol class="vlist" id="vlist">
+          <li class="on"><span class="vn">01</span><div><strong>Quintal do Espeto</strong><small>Santana · São Paulo</small></div></li>
+          <li><span class="vn">02</span><div><strong>Monte Carlo</strong><small>São Paulo</small></div></li>
+          <li><span class="vn">03</span><div><strong>Rodeio de Itapecerica da Serra</strong><small>Itapecerica da Serra · SP</small></div></li>
+          <li><span class="vn">04</span><div><strong>Casarão 154</strong><small>Cuiabá · MT</small></div></li>
+          <li><span class="vn">05</span><div><strong>Espaço Interlagos</strong><small>São Paulo</small></div></li>
+        </ol>
+      </div>
+      <div class="venues-right">
+        <div class="vframe" id="vframe">
+          <figure class="vf on">
+            <img src="img/flyer-dvd.jpg" alt="Flyer da gravação do DVD de Dener e Thiago no Quintal do Espeto" loading="lazy">
+            <figcaption><b>Gravação do DVD · Dener &amp; Thiago</b>Sexta, 09/out. Participações especiais de Fátima Leão, Júnior e Leonardo, Léo e Júnior e Durval e Alladin.</figcaption>
+          </figure>
+          <figure class="vf">
+            <video muted loop playsinline preload="none" poster="video/hero-3.jpg" data-src="video/hero-3.mp4"></video>
+            <figcaption><b>Fernando Lorenz</b>“Participação no show do @ricardorosalemcantor lá na @montecarlo.sp pela @primeshowseventossp”</figcaption>
+          </figure>
+          <figure class="vf">
+            <img src="img/rodeio-itapecerica.jpg" alt="Multidão em frente ao palco do rodeio de Itapecerica da Serra" loading="lazy">
+            <figcaption><b>Junior &amp; Leonardo</b>“Show grandioso no rodeio de Itapecerica da Serra”</figcaption>
+          </figure>
+          <figure class="vf">
+            <img src="img/flyer-cuiaba.jpg" alt="Flyer da participação de Dener e Thiago no DVD de Anselmo e Rafael em Cuiabá" loading="lazy">
+            <figcaption><b>Dener &amp; Thiago</b>21/out, participação no DVD da dupla Anselmo e Rafael. “Bora Cuiabá!”</figcaption>
+          </figure>
+          <figure class="vf">
+            <img src="img/espaco-interlagos.jpg" alt="Jéssica Vieira no palco do Espaço Interlagos" loading="lazy">
+            <figcaption><b>Jéssica Vieira</b>Ao vivo no @espacointerlagos.</figcaption>
+          </figure>
+        </div>
+        <div class="vprog"><i id="vprog"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO CONTRATAR 3 2 1 -->
+  <section class="how" id="como">
+    <div class="how-sticky">
+      <div class="how-glow"></div>
+      <p class="kicker how-k">como contratar</p>
+      <div class="how-num" aria-hidden="true"><span id="howNum">3</span></div>
+      <ol class="how-steps" id="howSteps">
+        <li class="on"><h3>Conta pra gente o seu evento</h3><p>Data, cidade, tipo de festa e quantas pessoas. Quanto mais detalhe, mais certeira a indicação.</p></li>
+        <li><h3>A Prime escolhe o artista com você</h3><p>Jéssica Vieira, Dener &amp; Thiago, Junior &amp; Leonardo ou Fernando Lorenz, conforme o clima que você quer.</p></li>
+        <li><h3>Luz, som e show</h3><p>No dia, é só curtir. O artista sobe no palco e a família Prime cuida do resto.</p></li>
+      </ol>
+      <a href="#contratar" class="btn btn-gold how-cta">Começar a contagem</a>
+    </div>
+  </section>
+
+  <!-- BASTIDORES -->
+  <section class="bts" id="bastidores">
+    <div class="sec-head">
+      <p class="kicker">resenha prime</p>
+      <h2 class="sec-h">Bastidores</h2>
+      <p class="sec-p">Antes e depois do palco também tem música. Direto do Instagram da Prime e dos artistas.</p>
+    </div>
+    <div class="reels" id="reels">
+      <a class="reel" href="https://www.instagram.com/primeshowseventossp/reel/DeniuPqRxKx/" target="_blank" rel="noopener">
+        <video muted loop playsinline preload="none" poster="video/bs-resenha.jpg" data-src="video/bs-resenha.mp4"></video>
+        <span>“Resenha Prime”</span>
+      </a>
+      <a class="reel" href="https://www.instagram.com/primeshowseventossp/reel/DenlQigxoYG/" target="_blank" rel="noopener">
+        <video muted loop playsinline preload="none" poster="video/bs-praia.jpg" data-src="video/bs-praia.mp4"></video>
+        <span>“Curtinho um brega com a família prime”</span>
+      </a>
+      <a class="reel" href="https://www.instagram.com/jessica.vieira.oficial/reel/De8fGjGOsRy/" target="_blank" rel="noopener">
+        <video muted loop playsinline preload="none" poster="video/bs-quintal.jpg" data-src="video/bs-quintal.mp4"></video>
+        <span>“Mais um evento” · Quintal do Espeto</span>
+      </a>
+      <a class="reel" href="https://www.instagram.com/primeshowseventossp/reel/DenhNl4RXpj/" target="_blank" rel="noopener">
+        <video muted loop playsinline preload="none" poster="video/bs-segunda-voz.jpg" data-src="video/bs-segunda-voz.mp4"></video>
+        <span>“Testando minha segunda voz”</span>
+      </a>
+      <a class="reel" href="https://www.instagram.com/primeshowseventossp/reel/De8cWnFRw_j/" target="_blank" rel="noopener">
+        <video muted loop playsinline preload="none" poster="video/bs-pista.jpg" data-src="video/bs-pista.mp4"></video>
+        <span>Bruno Hipólito e Jéssica Vieira</span>
+      </a>
+      <a class="reel" href="https://www.instagram.com/primeshowseventossp/reel/De2qsrJxL9C/" target="_blank" rel="noopener">
+        <video muted loop playsinline preload="none" poster="video/bs-estudio.jpg" data-src="video/bs-estudio.mp4"></video>
+        <span>Bruno Hipólito e Mariana Fagundes</span>
+      </a>
+    </div>
+    <p class="reels-hint" aria-hidden="true">arraste →</p>
+  </section>
+
+  <!-- CONTRATAR -->
+  <section class="hire" id="contratar">
+    <div class="hire-copy">
+      <p class="kicker">contratar</p>
+      <h2 class="sec-h">Seu evento,<br>nosso palco.</h2>
+      <p class="sec-p">Monte o pedido aqui. A mensagem fica pronta e a gente responde direto no Instagram da Prime.</p>
+      <a class="hire-ig" href="https://www.instagram.com/primeshowseventossp/" target="_blank" rel="noopener">@primeshowseventossp</a>
+    </div>
+
+    <form class="hire-form" id="form" novalidate>
+      <fieldset class="f-art">
+        <legend>Artista</legend>
+        <div class="chips" id="artChips">
+          <label><input type="radio" name="artista" value="Jéssica Vieira" checked><span>Jéssica Vieira</span></label>
+          <label><input type="radio" name="artista" value="Dener & Thiago"><span>Dener &amp; Thiago</span></label>
+          <label><input type="radio" name="artista" value="Junior & Leonardo"><span>Junior &amp; Leonardo</span></label>
+          <label><input type="radio" name="artista" value="Fernando Lorenz"><span>Fernando Lorenz</span></label>
+          <label><input type="radio" name="artista" value="Ainda não sei, quero indicação"><span>Quero indicação</span></label>
+        </div>
+      </fieldset>
+      <div class="f-row">
+        <label class="f">Tipo de evento
+          <select name="tipo">
+            <option>Casa de show ou bar</option>
+            <option>Festa particular</option>
+            <option>Casamento</option>
+            <option>Evento corporativo</option>
+            <option>Rodeio ou festa da cidade</option>
+            <option>Outro</option>
+          </select>
+        </label>
+        <label class="f">Data
+          <input type="date" name="data">
+        </label>
+      </div>
+      <div class="f-row">
+        <label class="f">Cidade
+          <input type="text" name="cidade" placeholder="Ex.: São Paulo, SP" autocomplete="address-level2">
+        </label>
+        <label class="f">Seu nome
+          <input type="text" name="nome" placeholder="Como te chamamos?" autocomplete="name">
+        </label>
+      </div>
+      <label class="f f-range">Público estimado <output id="pubOut">200 pessoas</output>
+        <input type="range" name="publico" id="pub" min="50" max="5000" step="50" value="200">
+      </label>
+      <div class="msg">
+        <p class="msg-l">Sua mensagem</p>
+        <p class="msg-t" id="msg"></p>
+      </div>
+      <button class="btn btn-gold f-send" type="submit" id="send"><span>Enviar pelo Instagram</span></button>
+      <p class="f-note" id="note">A mensagem é copiada e o Direct da Prime abre em seguida. É só colar e enviar.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="ft">
+  <img src="img/logo.png" alt="Prime Shows 321" width="134" height="39">
+  <p>Prime Shows e Eventos 321 · Produtora de shows e eventos artísticos</p>
+  <nav>
+    <a href="https://www.instagram.com/primeshowseventossp/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/jessica.vieira.oficial/" target="_blank" rel="noopener">Jéssica Vieira</a>
+    <a href="https://www.instagram.com/denerethiago.oficial/" target="_blank" rel="noopener">Dener &amp; Thiago</a>
+    <a href="https://www.instagram.com/junioreleonardooficial/" target="_blank" rel="noopener">Junior &amp; Leonardo</a>
+    <a href="https://www.instagram.com/fernandolorenzcantor/" target="_blank" rel="noopener">Fernando Lorenz</a>
+  </nav>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="main.js?v=1"></script>
+</body>
+</html>
