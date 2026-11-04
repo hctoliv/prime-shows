@@ -270,6 +270,8 @@
     const r = $$('input[name=artista]').find(i => i.value === name);
     if (r) { r.checked = true; buildMsg(); }
   }
+  const today = new Date(); today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+  form.elements.data.min = today.toISOString().slice(0, 10);
   form.addEventListener('input', buildMsg);
   buildMsg();
   const toast = $('#toast');
@@ -278,9 +280,10 @@
     e.preventDefault();
     const text = buildMsg();
     // open the tab inside the click so popup blockers allow it, point it at the DM after the countdown
+    // start the copy while this page still has focus, the new tab would make it fail
+    const copying = navigator.clipboard ? navigator.clipboard.writeText(text).then(() => true, () => false) : Promise.resolve(false);
     const win = window.open('about:blank', '_blank');
-    let copied = false;
-    try { await navigator.clipboard.writeText(text); copied = true; } catch (err) {}
+    const copied = await copying;
     const btn = $('#send'), label = btn.querySelector('span');
     btn.classList.add('counting'); btn.disabled = true;
     const steps = ['3', '2', '1', 'Abrindo o Direct…'];
